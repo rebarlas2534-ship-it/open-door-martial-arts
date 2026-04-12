@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
+@theme {
+  --color-dojo-black:    #0a0a0a;
+  --color-dojo-gray:     #1a1a1a;
+  --color-dojo-gray-2:   #2a2a2a;
+  --color-dojo-red:      #CC1111;
+  --color-dojo-red-dark: #a50e0e;
+  --color-dojo-cream:    #f5f0e8;
+  --color-dojo-cream-2:  #e8e0d0;
+  --font-heading: var(--font-bebas);
+  --font-sans:    var(--font-source-sans);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a;
+  --foreground: #f5f0e8;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
