@@ -149,6 +149,7 @@ export default function ProgramsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { name: "Adult Taekwondo", note: "Seeking instructor", icon: "⚫" },
+              { name: "Teen Taekwondo", note: "Ages 13–17 · Blue belt+", icon: "🥋" },
               { name: "Tai Chi", note: "Gauging interest", icon: "🌀" },
               { name: "Brazilian Jiu-Jitsu", note: "Gauging interest", icon: "🤼" },
               { name: "Kickboxing / Fitness", note: "Gauging interest", icon: "🥊" },

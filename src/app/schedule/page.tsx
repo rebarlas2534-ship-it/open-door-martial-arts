@@ -12,7 +12,6 @@ const schedule = [
     classes: [
       { time: "4:00 PM", name: "Little Dragons", ages: "Ages 4–7", duration: "45 min" },
       { time: "5:00 PM", name: "Youth Taekwondo", ages: "Ages 8–17", duration: "60 min" },
-      { time: "—", name: "Adult Taekwondo", ages: "Ages 18+", duration: "—", comingSoon: true },
     ],
   },
   {
@@ -36,7 +35,6 @@ const schedule = [
     day: "Friday",
     classes: [
       { time: "5:00 PM", name: "Youth Taekwondo", ages: "Ages 8–17", duration: "60 min" },
-      { time: "—", name: "Adult Taekwondo", ages: "Ages 18+", duration: "—", comingSoon: true },
     ],
   },
   {
@@ -54,7 +52,6 @@ const schedule = [
 const programColors: Record<string, string> = {
   "Little Dragons": "bg-yellow-500/10 border-yellow-500/30 text-yellow-400",
   "Youth Taekwondo": "bg-blue-500/10 border-blue-500/30 text-blue-400",
-  "Adult Taekwondo": "bg-dojo-red/10 border-dojo-red/30 text-dojo-red",
   "Family Class": "bg-green-500/10 border-green-500/30 text-green-400",
 };
 
@@ -93,27 +90,15 @@ export default function SchedulePage() {
                     {day.classes.map((cls) => (
                       <li
                         key={`${day.day}-${cls.name}`}
-                        className={`rounded-lg border px-4 py-3 ${
-                          cls.comingSoon
-                            ? "bg-white/5 border-white/10 opacity-50"
-                            : (programColors[cls.name] ?? "bg-white/5 border-white/10 text-dojo-cream")
-                        }`}
+                        className={`rounded-lg border px-4 py-3 ${programColors[cls.name] ?? "bg-white/5 border-white/10 text-dojo-cream"}`}
                       >
                         <div className="flex items-center justify-between gap-2 mb-1">
-                          <span className={`font-heading text-lg tracking-wide ${cls.comingSoon ? "text-dojo-cream/60" : ""}`}>
-                            {cls.name}
-                          </span>
-                          {cls.comingSoon ? (
-                            <span className="text-xs border border-white/20 text-dojo-cream/40 px-2 py-0.5 rounded tracking-widest uppercase">
-                              Coming Soon
-                            </span>
-                          ) : (
-                            <span className="text-xs opacity-60">{cls.duration}</span>
-                          )}
+                          <span className="font-heading text-lg tracking-wide">{cls.name}</span>
+                          <span className="text-xs opacity-60">{cls.duration}</span>
                         </div>
                         <div className="flex items-center justify-between text-xs opacity-60">
                           <span>{cls.ages}</span>
-                          {!cls.comingSoon && <span className="font-semibold">{cls.time}</span>}
+                          <span className="font-semibold">{cls.time}</span>
                         </div>
                       </li>
                     ))}

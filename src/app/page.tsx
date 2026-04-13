@@ -45,10 +45,10 @@ const facilityFeatures = [
 ];
 
 const schedule = [
-  { day: "Monday", classes: ["Little Dragons — 4:00 PM", "Youth Taekwondo — 5:00 PM", "Adult Taekwondo — Coming Soon"] },
+  { day: "Monday", classes: ["Little Dragons — 4:00 PM", "Youth Taekwondo — 5:00 PM"] },
   { day: "Wednesday", classes: ["Little Dragons — 4:00 PM", "Youth Taekwondo — 5:00 PM"] },
   { day: "Thursday", classes: ["Family Class — 6:00 PM"] },
-  { day: "Friday", classes: ["Youth Taekwondo — 5:00 PM", "Adult Taekwondo — Coming Soon"] },
+  { day: "Friday", classes: ["Youth Taekwondo — 5:00 PM"] },
   { day: "Saturday", classes: ["Family Class — 10:30 AM"] },
 ];
 
