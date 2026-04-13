@@ -41,6 +41,33 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Waiver */}
+      <section className="py-10 border-b border-white/5">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="bg-dojo-gray rounded-2xl border border-white/5 p-8 flex flex-col sm:flex-row sm:items-center gap-6">
+            <div className="flex-1">
+              <h2 className="font-heading text-2xl tracking-wide text-dojo-cream mb-3">Before Your First Class</h2>
+              <p className="text-dojo-cream/60 text-sm leading-relaxed">
+                We ask all new participants to complete a waiver before stepping on the mat. You can
+                download it below, fill it out at home, and bring it with you — or we&apos;ll have a
+                copy waiting for you when you arrive.
+              </p>
+            </div>
+            <a
+              href="/OpenDoor_Waiver.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-dojo-red text-white font-heading text-xl tracking-widest rounded hover:bg-dojo-red-dark transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              </svg>
+              DOWNLOAD WAIVER (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Content */}
       <section className="py-16">
         <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-14">

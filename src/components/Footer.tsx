@@ -42,6 +42,16 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/OpenDoor_Waiver.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dojo-cream/70 hover:text-dojo-cream text-sm font-semibold tracking-wide uppercase transition-colors"
+                >
+                  Download Waiver
+                </a>
+              </li>
             </ul>
           </div>
 
