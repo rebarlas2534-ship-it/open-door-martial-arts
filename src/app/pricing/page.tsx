@@ -22,8 +22,10 @@ const plans = [
     price: "$175",
     period: "/ month",
     includes: [
-      "Unlimited classes for everyone in your household",
+      "Covers the first two family members",
+      "Unlimited classes",
       "Kids and adult classes combined",
+      "+$25/month for each additional family member",
     ],
     highlight: true,
     note: "Best value for families",
