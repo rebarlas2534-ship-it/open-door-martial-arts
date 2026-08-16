@@ -49,7 +49,7 @@ export default function ContactPage() {
               <h2 className="font-heading text-2xl tracking-wide text-dojo-cream mb-3">Before Your First Class</h2>
               <p className="text-dojo-cream/60 text-sm leading-relaxed">
                 We ask all new participants to complete a waiver before stepping on the mat. You can
-                download it below, fill it out at home, and bring it with you — or we&apos;ll have a
+                download it below, fill it out at home, and bring it with you, or we&apos;ll have a
                 copy waiting for you when you arrive.
               </p>
             </div>
@@ -237,7 +237,6 @@ export default function ContactPage() {
                   { day: "Thursday", time: "6:00 PM – 7:00 PM" },
                   { day: "Friday", time: "5:00 PM – 8:00 PM" },
                   { day: "Saturday", time: "10:30 AM – 12:00 PM" },
-                  { day: "Sunday", time: "Closed" },
                 ].map((row) => (
                   <li key={row.day} className="flex justify-between">
                     <span className="text-dojo-cream/60 font-semibold">{row.day}</span>

@@ -23,7 +23,7 @@ const programs = [
   {
     name: "Adult Beginners",
     ages: "Ages 18+",
-    desc: "A welcoming introduction to Taekwondo for grown-ups starting from scratch. No experience needed — just show up.",
+    desc: "A welcoming introduction to Taekwondo for grown-ups starting from scratch. No experience needed, just show up.",
     icon: "🟢",
   },
   {
@@ -41,12 +41,12 @@ const stats = [
 ];
 
 const schedule = [
-  { day: "Monday", classes: ["Little Dragons — 4:00 PM", "Youth Taekwondo — 5:00 PM"] },
-  { day: "Tuesday", classes: ["Teen Taekwondo — 5:00 PM", "Advanced Adult — 7:15 PM"] },
-  { day: "Wednesday", classes: ["Little Dragons — 4:00 PM", "Youth Taekwondo — 5:00 PM"] },
-  { day: "Thursday", classes: ["Teen Taekwondo — 5:00 PM", "Adult Beginners — 6:00 PM", "Advanced Adult — 7:15 PM"] },
-  { day: "Friday", classes: ["Youth Taekwondo — 5:00 PM"] },
-  { day: "Saturday", classes: ["Adult Beginners — 10:30 AM"] },
+  { day: "Monday", classes: ["Little Dragons at 4:00 PM", "Youth Taekwondo at 5:00 PM"] },
+  { day: "Tuesday", classes: ["Teen Taekwondo at 5:00 PM", "Advanced Adult at 7:15 PM"] },
+  { day: "Wednesday", classes: ["Little Dragons at 4:00 PM", "Youth Taekwondo at 5:00 PM"] },
+  { day: "Thursday", classes: ["Teen Taekwondo at 5:00 PM", "Adult Beginners at 6:00 PM", "Advanced Adult at 7:15 PM"] },
+  { day: "Friday", classes: ["Youth Taekwondo at 5:00 PM"] },
+  { day: "Saturday", classes: ["Adult Beginners at 10:30 AM"] },
 ];
 
 export default function HomePage() {
@@ -83,7 +83,7 @@ export default function HomePage() {
 
           <p className="text-dojo-cream/70 text-lg sm:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
             Professional Taekwondo training for kids, teens, and adults.
-            Located in Sturgeon Bay, Wisconsin — your journey starts here.
+            Located in Sturgeon Bay, Wisconsin. Your journey starts here.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -137,7 +137,7 @@ export default function HomePage() {
             </h2>
             <div className="space-y-4 text-dojo-cream/70 leading-relaxed">
               <p>
-                Open Door Martial Arts Center is a dedicated Taekwondo school in Sturgeon Bay, Wisconsin —
+                Open Door Martial Arts Center is a dedicated Taekwondo school in Sturgeon Bay, Wisconsin,
                 carrying on a tradition of martial arts excellence in Door County that goes back decades.
               </p>
               <p>
@@ -196,7 +196,7 @@ export default function HomePage() {
               <div>
                 <h3 className="font-heading text-3xl tracking-wide text-white mb-3">READY TO START?</h3>
                 <p className="text-white/80 text-sm leading-relaxed">
-                  Try any class free — no commitment, no pressure. Come see if Open Door is the right fit for you.
+                  Try any class free, no commitment, no pressure. Come see if Open Door is the right fit for you.
                 </p>
               </div>
               <Link

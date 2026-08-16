@@ -48,10 +48,6 @@ const schedule = [
       { time: "10:30 AM", name: "Adult Beginners", ages: "Ages 18+", duration: "60 min" },
     ],
   },
-  {
-    day: "Sunday",
-    classes: [],
-  },
 ];
 
 const beltTestingDates = [
@@ -87,7 +83,7 @@ export default function SchedulePage() {
           <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">WHEN WE TRAIN</p>
           <h1 className="font-heading text-6xl sm:text-7xl text-dojo-cream mb-5">CLASS SCHEDULE</h1>
           <p className="text-dojo-cream/60 max-w-xl mx-auto leading-relaxed">
-            Classes run weekly. New students are welcome to drop in any time —
+            Classes run weekly. New students are welcome to drop in any time,
             contact us first so we can expect you.
           </p>
         </div>
@@ -159,7 +155,7 @@ export default function SchedulePage() {
             <h2 className="font-heading text-5xl sm:text-6xl text-dojo-cream mb-5">CLASS CALENDAR</h2>
             <p className="text-dojo-cream/60 max-w-2xl mx-auto leading-relaxed">
               Open Door Martial Arts Center trains year-round. There are no sessions or terms to
-              enroll in — you can start any time, and your tuition covers unlimited classes every month.
+              enroll in, you can start any time, and your tuition covers unlimited classes every month.
             </p>
             <p className="text-dojo-cream/60 max-w-2xl mx-auto leading-relaxed mt-4">
               Two things run on a set schedule: belt testing and our holiday closures.
@@ -208,7 +204,7 @@ export default function SchedulePage() {
                 ))}
               </ul>
               <p className="text-dojo-cream/60 text-sm leading-relaxed">
-                Tuition is not prorated or adjusted for these closures — they&apos;re built into the
+                Tuition is not prorated or adjusted for these closures, they&apos;re built into the
                 monthly rate.
               </p>
             </div>

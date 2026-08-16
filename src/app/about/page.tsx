@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About | Open Door Martial Arts Center",
-  description: "Learn about Open Door Martial Arts Center — our history, our instructor Anne Barlas, and the legacy of Marjory Allingham in Sturgeon Bay, Wisconsin.",
+  description: "Learn about Open Door Martial Arts Center, our history, our instructor Anne Barlas, and the legacy of Marjory Allingham in Sturgeon Bay, Wisconsin.",
 };
 
 const tenets = [
@@ -11,7 +11,7 @@ const tenets = [
     number: "01",
     english: "Courtesy",
     korean: "Ye Ui (예의)",
-    desc: "Showing politeness, good manners, and respect toward instructors, training partners, and everyone around you — on the mat and off it.",
+    desc: "Showing politeness, good manners, and respect toward instructors, training partners, and everyone around you, on the mat and off it.",
   },
   {
     number: "02",
@@ -29,13 +29,13 @@ const tenets = [
     number: "04",
     english: "Self-Control",
     korean: "Guk Gi (극기)",
-    desc: "Ruling over your own thoughts, emotions, and actions — especially the discipline to use martial arts skill responsibly.",
+    desc: "Ruling over your own thoughts, emotions, and actions, especially the discipline to use martial arts skill responsibly.",
   },
   {
     number: "05",
     english: "Indomitable Spirit",
     korean: "Baekjeol Boolgool (백절불굴)",
-    desc: "An unbreakable will — the courage to stand up for what's right and keep going, no matter the odds stacked against you.",
+    desc: "An unbreakable will: the courage to stand up for what's right and keep going, no matter the odds stacked against you.",
   },
 ];
 
@@ -69,12 +69,12 @@ export default function AboutPage() {
               She ran it until her death in 2013.
             </p>
             <p>
-              Marjory had a gift. She had a way of seeing something in every kid who walked through her door —
+              Marjory had a gift. She had a way of seeing something in every kid who walked through her door,
               the shy ones, the restless ones, the ones who didn&apos;t quite fit anywhere else. She never met
               a kid she didn&apos;t believe in.
             </p>
             <p>
-              That belief — that every person who shows up deserves to be seen and taken seriously — is the
+              That belief, that every person who shows up deserves to be seen and taken seriously, is the
               foundation that everything at Open Door is built on. It shapes how we teach, how we treat our
               students, and what we think martial arts is really for.
             </p>
@@ -86,14 +86,14 @@ export default function AboutPage() {
               &ldquo;She never met a kid she didn&apos;t believe in.&rdquo;
             </p>
             <footer className="mt-3 text-dojo-cream/50 text-sm font-semibold tracking-widest uppercase">
-              — The guiding spirit of Open Door
+              The guiding spirit of Open Door
             </footer>
           </blockquote>
 
           <div className="space-y-5 text-dojo-cream/80 leading-relaxed text-lg">
             <p>
               The new Open Door Martial Arts Center is dedicated to Marjory&apos;s memory. We&apos;re here
-              because she was here first — and because the Door County community deserves a place where that
+              because she was here first, and because the Door County community deserves a place where that
               tradition continues.
             </p>
           </div>
@@ -117,7 +117,7 @@ export default function AboutPage() {
               </p>
               <p>
                 She is a wife and mother of two, and the lessons she carried from her years as
-                Mrs. A&apos;s student are ones she values deeply — and works to pass on to every
+                Mrs. A&apos;s student are ones she values deeply, and works to pass on to every
                 student she teaches.
               </p>
               <p>
@@ -147,12 +147,12 @@ export default function AboutPage() {
               {
                 icon: "🚪",
                 title: "The Door Is Open",
-                desc: "The name isn't an accident. Every age, every background, every skill level — if you want to try, there's a place for you here.",
+                desc: "The name isn't an accident. Every age, every background, every skill level. If you want to try, there's a place for you here.",
               },
               {
                 icon: "🥋",
                 title: "Real Taekwondo",
-                desc: "We teach the real thing — proper technique, belt rank progression, forms, and sparring. No shortcuts.",
+                desc: "We teach the real thing: proper technique, belt rank progression, forms, and sparring. No shortcuts.",
               },
               {
                 icon: "❤️",
@@ -162,7 +162,7 @@ export default function AboutPage() {
               {
                 icon: "🏡",
                 title: "Part of Door County",
-                desc: "We're a small, local school — 525 Jefferson Street, Sturgeon Bay. We're rooted here, and we're staying.",
+                desc: "We're a small, local school at 525 Jefferson Street, Sturgeon Bay. We're rooted here, and we're staying.",
               },
             ].map((v) => (
               <div key={v.title} className="bg-dojo-gray rounded-xl p-7 border border-white/5 flex gap-5">
@@ -206,7 +206,7 @@ export default function AboutPage() {
           <h2 className="font-heading text-5xl text-white mb-4">COME FIND OUT FOR YOURSELF</h2>
           <p className="text-white/80 mb-8 leading-relaxed">
             The best way to understand what we do is to step through the door.
-            Your first class is free — no commitment, no pressure.
+            Your first class is free, no commitment, no pressure.
           </p>
           <Link
             href="/contact"

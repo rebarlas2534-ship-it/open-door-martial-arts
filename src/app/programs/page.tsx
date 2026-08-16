@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Programs | Open Door Martial Arts Center",
-  description: "Taekwondo programs for all ages in Sturgeon Bay, Wisconsin — Little Dragons, Youth Taekwondo, Teen Taekwondo, and Adult classes.",
+  description: "Taekwondo programs for all ages in Sturgeon Bay, Wisconsin: Little Dragons, Youth Taekwondo, Teen Taekwondo, and Adult classes.",
 };
 
 const programs = [
@@ -64,7 +64,7 @@ const programs = [
     icon: "🟢",
     color: "border-green-500/30",
     accent: "text-green-400",
-    desc: "Our Adult Beginners class is a welcoming introduction to Taekwondo for grown-ups starting from scratch. No experience needed — just a willingness to learn. You'll build real technique, fitness, and confidence alongside other adults at the same stage of training.",
+    desc: "Our Adult Beginners class is a welcoming introduction to Taekwondo for grown-ups starting from scratch. No experience needed, just a willingness to learn. You'll build real technique, fitness, and confidence alongside other adults at the same stage of training.",
     highlights: [
       "No experience necessary",
       "Fundamentals and basic forms",
@@ -81,7 +81,7 @@ const programs = [
     icon: "🥇",
     color: "border-orange-500/30",
     accent: "text-orange-400",
-    desc: "Our Advanced Adult class is for students who've built a foundation and are ready to push further — deeper technique, sparring, and conditioning at a faster pace for experienced practitioners.",
+    desc: "Our Advanced Adult class is for students who've built a foundation and are ready to push further: deeper technique, sparring, and conditioning at a faster pace for experienced practitioners.",
     highlights: [
       "Advanced forms and combinations",
       "Sparring and self-defense drills",
@@ -103,7 +103,7 @@ export default function ProgramsPage() {
           <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">WHAT WE OFFER</p>
           <h1 className="font-heading text-6xl sm:text-7xl text-dojo-cream mb-5">OUR PROGRAMS</h1>
           <p className="text-dojo-cream/60 max-w-xl mx-auto leading-relaxed">
-            Programs for every age and skill level — whether you&apos;re four years old or forty-four,
+            Programs for every age and skill level, whether you&apos;re four years old or forty-four,
             a first-timer or a returning black belt.
           </p>
         </div>
@@ -153,12 +153,12 @@ export default function ProgramsPage() {
           <div className="mb-10">
             <p className="font-heading text-dojo-cream/40 text-xl tracking-[0.2em] mb-3">WHAT&apos;S NEXT</p>
             <h2 className="font-heading text-4xl sm:text-5xl text-dojo-cream mb-5">
-              We&apos;re Growing — Help Shape What&apos;s Next
+              We&apos;re Growing: Help Shape What&apos;s Next
             </h2>
             <p className="text-dojo-cream/60 leading-relaxed max-w-2xl">
               Open Door is just getting started. Anne leads our Taekwondo programs for kids, and we&apos;re
               actively looking for qualified instructors to bring more disciplines to Sturgeon Bay. We&apos;re
-              gauging community interest before we commit — because what we build here should reflect what
+              gauging community interest before we commit, because what we build here should reflect what
               Door County actually wants.
             </p>
           </div>

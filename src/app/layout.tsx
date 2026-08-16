@@ -19,7 +19,7 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   title: "Open Door Martial Arts Center | Taekwondo in Sturgeon Bay, WI",
   description:
-    "Taekwondo classes for kids, teens, and families in Sturgeon Bay, Wisconsin. Open Door Martial Arts Center — carrying on a Door County tradition.",
+    "Taekwondo classes for kids, teens, and families in Sturgeon Bay, Wisconsin. Open Door Martial Arts Center, carrying on a Door County tradition.",
 };
 
 export default function RootLayout({

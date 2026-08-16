@@ -24,7 +24,7 @@ export default function Nav() {
         {/* Logo */}
         <Link
           href="/"
-          aria-label="Open Door Martial Arts — Home"
+          aria-label="Open Door Martial Arts Home"
           className="flex items-center gap-3 shrink-0"
         >
           <Image

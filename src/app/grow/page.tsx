@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Help Us Build Open Door | Open Door Martial Arts Center",
-  description: "Tell us what classes you want to see in Sturgeon Bay — or reach out if you're a qualified instructor looking for a home.",
+  description: "Tell us what classes you want to see in Sturgeon Bay, or reach out if you're a qualified instructor looking for a home.",
 };
 
 const FORM_URL =
@@ -19,7 +19,7 @@ export default function GrowPage() {
             Help Us Build Open Door
           </h1>
           <p className="text-dojo-cream/60 max-w-xl mx-auto leading-relaxed">
-            Open Door is more than a building — it&apos;s whatever Door County wants it to be.
+            Open Door is more than a building: it&apos;s whatever Door County wants it to be.
             That means we need to hear from you.
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function GrowPage() {
       <section className="py-20">
         <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-8">
 
-          {/* Left — community interest */}
+          {/* Left: community interest */}
           <div className="bg-dojo-gray rounded-2xl border border-white/5 p-10 flex flex-col gap-6">
             <span className="text-5xl">💬</span>
             <div>
@@ -38,8 +38,8 @@ export default function GrowPage() {
               </h2>
               <div className="space-y-4 text-dojo-cream/70 leading-relaxed">
                 <p>
-                  We&apos;re actively thinking about what to add next — Tai Chi, Brazilian Jiu-Jitsu,
-                  adult Taekwondo, fitness kickboxing — but we want to know what Door County
+                  We&apos;re actively thinking about what to add next: Tai Chi, Brazilian Jiu-Jitsu,
+                  adult Taekwondo, fitness kickboxing, but we want to know what Door County
                   actually wants before we commit to anything.
                 </p>
                 <p>
@@ -58,7 +58,7 @@ export default function GrowPage() {
             </a>
           </div>
 
-          {/* Right — instructor outreach */}
+          {/* Right: instructor outreach */}
           <div className="bg-dojo-gray rounded-2xl border border-white/5 p-10 flex flex-col gap-6">
             <span className="text-5xl">🥋</span>
             <div>
@@ -67,12 +67,12 @@ export default function GrowPage() {
               </h2>
               <div className="space-y-4 text-dojo-cream/70 leading-relaxed">
                 <p>
-                  We have the space, the students, and the community — we just need the right people.
+                  We have the space, the students, and the community. We just need the right people.
                   If you&apos;re a qualified martial arts instructor looking for a place to teach in
                   Door County, we&apos;d genuinely love to hear from you.
                 </p>
                 <p>
-                  Whether you teach Tai Chi, BJJ, kickboxing, or something else entirely — if you
+                  Whether you teach Tai Chi, BJJ, kickboxing, or something else entirely, if you
                   care about doing it right and you believe in what a good martial arts school can
                   mean to a community, reach out. Let&apos;s talk.
                 </p>
@@ -97,7 +97,7 @@ export default function GrowPage() {
         <div className="mx-auto max-w-3xl px-6 text-center">
           <p className="text-dojo-cream/40 leading-relaxed text-sm">
             Open Door Martial Arts Center is a small, community-owned school at 525 Jefferson Street
-            in Sturgeon Bay. We&apos;re building this place thoughtfully — one class, one student,
+            in Sturgeon Bay. We&apos;re building this place thoughtfully: one class, one student,
             one conversation at a time.
           </p>
         </div>
