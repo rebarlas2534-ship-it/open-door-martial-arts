@@ -54,6 +54,22 @@ const schedule = [
   },
 ];
 
+const beltTestingDates = [
+  "Mid-to-late December",
+  "Late February",
+  "Early May",
+  "Mid-July",
+  "Late September",
+];
+
+const holidayClosures = [
+  "Labor Day weekend",
+  "Thanksgiving (Thursday and Friday)",
+  "Christmas week through New Year's Day",
+  "Memorial Day",
+  "July 4th, when it falls on a class day",
+];
+
 const programColors: Record<string, string> = {
   "Little Dragons": "bg-yellow-500/10 border-yellow-500/30 text-yellow-400",
   "Youth Taekwondo": "bg-blue-500/10 border-blue-500/30 text-blue-400",
@@ -135,8 +151,73 @@ export default function SchedulePage() {
         </div>
       </section>
 
+      {/* Class Calendar */}
+      <section className="py-20 bg-dojo-gray border-t border-white/5">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="text-center mb-12">
+            <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">THE YEAR AHEAD</p>
+            <h2 className="font-heading text-5xl sm:text-6xl text-dojo-cream mb-5">CLASS CALENDAR</h2>
+            <p className="text-dojo-cream/60 max-w-2xl mx-auto leading-relaxed">
+              Open Door Martial Arts Center trains year-round. There are no sessions or terms to
+              enroll in — you can start any time, and your tuition covers unlimited classes every month.
+            </p>
+            <p className="text-dojo-cream/60 max-w-2xl mx-auto leading-relaxed mt-4">
+              Two things run on a set schedule: belt testing and our holiday closures.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Belt Testing */}
+            <div className="bg-dojo-black rounded-2xl border border-white/5 p-8">
+              <h3 className="font-heading text-2xl tracking-widest text-dojo-cream mb-3">BELT TESTING</h3>
+              <p className="text-dojo-cream/60 text-sm leading-relaxed mb-5">
+                Testing is how we mark progress and award the next belt. New students test on a
+                shorter cycle to build early momentum, and testing spreads out as students advance
+                and the material gets deeper.
+              </p>
+              <p className="text-dojo-cream/40 text-xs font-semibold tracking-widest uppercase mb-3">
+                Testing dates for our first year
+              </p>
+              <ul className="flex flex-col gap-2 mb-5">
+                {beltTestingDates.map((d) => (
+                  <li key={d} className="flex items-center gap-3 text-dojo-cream/80 text-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-dojo-red flex-shrink-0" />
+                    {d}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-dojo-cream/60 text-sm leading-relaxed">
+                Instructors will let you know when a student is ready to test. There&apos;s a $25
+                testing fee per test.
+              </p>
+            </div>
+
+            {/* Holiday Closures */}
+            <div className="bg-dojo-black rounded-2xl border border-white/5 p-8">
+              <h3 className="font-heading text-2xl tracking-widest text-dojo-cream mb-3">HOLIDAY CLOSURES</h3>
+              <p className="text-dojo-cream/60 text-sm leading-relaxed mb-5">
+                We&apos;re closed on the following dates each year. Regular classes resume the next
+                scheduled class day.
+              </p>
+              <ul className="flex flex-col gap-2 mb-5">
+                {holidayClosures.map((d) => (
+                  <li key={d} className="flex items-center gap-3 text-dojo-cream/80 text-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-dojo-red flex-shrink-0" />
+                    {d}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-dojo-cream/60 text-sm leading-relaxed">
+                Tuition is not prorated or adjusted for these closures — they&apos;re built into the
+                monthly rate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="py-16 bg-dojo-gray border-t border-white/5">
+      <section className="py-16 border-t border-white/5">
         <div className="mx-auto max-w-xl px-6 text-center">
           <h2 className="font-heading text-4xl text-dojo-cream mb-4">READY TO JUMP IN?</h2>
           <p className="text-dojo-cream/60 mb-8">Your first class is free. No commitment required.</p>
