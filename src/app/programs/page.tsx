@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Programs | Open Door Martial Arts Center",
-  description: "Taekwondo programs for all ages in Sturgeon Bay, Wisconsin — Little Dragons, Youth Taekwondo, and Family Classes.",
+  description: "Taekwondo programs for all ages in Sturgeon Bay, Wisconsin — Little Dragons, Youth Taekwondo, Teen Taekwondo, and Adult classes.",
 };
 
 const programs = [
@@ -26,7 +26,7 @@ const programs = [
   },
   {
     name: "Youth Taekwondo",
-    ages: "Ages 8–17",
+    ages: "Ages 8–12",
     icon: "🥋",
     color: "border-blue-500/30",
     accent: "text-blue-400",
@@ -42,38 +42,55 @@ const programs = [
     schedule: "Mon, Wed & Fri at 5:00 PM",
   },
   {
-    name: "Adult Taekwondo",
-    ages: "Ages 18+",
-    icon: "⚫",
-    color: "border-dojo-red/30",
-    accent: "text-dojo-red",
-    desc: "It's never too late to start. Our adult Taekwondo program welcomes complete beginners and experienced practitioners alike. You'll build real technique, physical conditioning, and the mental toughness that only martial arts training can provide.",
+    name: "Teen Taekwondo",
+    ages: "Ages 13–17",
+    icon: "⚡",
+    color: "border-purple-500/30",
+    accent: "text-purple-400",
+    desc: "Our Teen Taekwondo program bridges youth and adult training with a faster pace, deeper technique work, and leadership opportunities for students ready for more intensity. Teens train together in a class built around their stage of life.",
     highlights: [
-      "Beginner-friendly curriculum",
-      "Traditional forms and sparring",
-      "Self-defense applications",
-      "Strength and conditioning",
+      "Faster-paced conditioning",
+      "Advanced forms and sparring",
+      "Leadership development",
       "Belt rank progression",
-      "Stress relief and mental clarity",
+      "Peer group of same-age students",
+      "Discipline and focus",
     ],
-    schedule: "Coming Soon — Seeking Instructor",
+    schedule: "Tue & Thu at 5:00 PM",
   },
   {
-    name: "Family Classes",
-    ages: "All Ages",
-    icon: "👨‍👩‍👧",
+    name: "Adult Beginners",
+    ages: "Ages 18+",
+    icon: "🟢",
     color: "border-green-500/30",
     accent: "text-green-400",
-    desc: "Our Family Classes are one of our most popular offerings — and for good reason. Training together creates a powerful shared experience that strengthens family bonds and gets everyone moving. Parents and kids work side by side on the mat.",
+    desc: "Our Adult Beginners class is a welcoming introduction to Taekwondo for grown-ups starting from scratch. No experience needed — just a willingness to learn. You'll build real technique, fitness, and confidence alongside other adults at the same stage of training.",
     highlights: [
-      "Parents and kids train together",
-      "Builds family connection",
-      "Fun and engaging curriculum",
-      "All skill levels welcome",
-      "Great for all fitness levels",
-      "A shared family hobby",
+      "No experience necessary",
+      "Fundamentals and basic forms",
+      "Fitness and flexibility",
+      "Supportive, low-pressure environment",
+      "Belt rank progression",
+      "A great starting point for advanced classes",
     ],
     schedule: "Thu at 6:00 PM & Sat at 10:30 AM",
+  },
+  {
+    name: "Advanced Adult",
+    ages: "Ages 18+",
+    icon: "🥇",
+    color: "border-orange-500/30",
+    accent: "text-orange-400",
+    desc: "Our Advanced Adult class is for students who've built a foundation and are ready to push further — deeper technique, sparring, and conditioning at a faster pace for experienced practitioners.",
+    highlights: [
+      "Advanced forms and combinations",
+      "Sparring and self-defense drills",
+      "Higher-intensity conditioning",
+      "Belt rank progression",
+      "Mentorship for lower belts",
+      "Serious training environment",
+    ],
+    schedule: "Tue & Thu at 7:15 PM",
   },
 ];
 
@@ -148,8 +165,6 @@ export default function ProgramsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { name: "Adult Taekwondo", note: "Seeking instructor", icon: "⚫" },
-              { name: "Teen Taekwondo", note: "Ages 13–17 · Blue belt+", icon: "🥋" },
               { name: "Tai Chi", note: "Gauging interest", icon: "🌀" },
               { name: "Brazilian Jiu-Jitsu", note: "Gauging interest", icon: "🤼" },
               { name: "Kickboxing / Fitness", note: "Gauging interest", icon: "🥊" },

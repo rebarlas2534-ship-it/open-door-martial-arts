@@ -147,10 +147,11 @@ export default function ContactPage() {
                   >
                     <option value="">Select a program...</option>
                     <option value="Little Dragons">Little Dragons (Ages 4–7)</option>
-                    <option value="Youth Taekwondo">Youth Taekwondo (Ages 8–17)</option>
-                    <option value="Adult Taekwondo">Adult Taekwondo (Ages 18+)</option>
+                    <option value="Youth Taekwondo">Youth Taekwondo (Ages 8–12)</option>
+                    <option value="Teen Taekwondo">Teen Taekwondo (Ages 13–17)</option>
+                    <option value="Adult Beginners">Adult Beginners</option>
+                    <option value="Advanced Adult">Advanced Adult</option>
                     <option value="Fitness Kickboxing">Fitness Kickboxing</option>
-                    <option value="Family Classes">Family Classes</option>
                     <option value="Not Sure">Not Sure Yet</option>
                   </select>
                 </div>

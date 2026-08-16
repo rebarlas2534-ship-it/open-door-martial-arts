@@ -10,46 +10,43 @@ const programs = [
   },
   {
     name: "Youth Taekwondo",
-    ages: "Ages 8–17",
+    ages: "Ages 8–12",
     desc: "Traditional Taekwondo curriculum focused on discipline, respect, and physical development. Progress through belt ranks at your own pace.",
     icon: "🥋",
   },
   {
-    name: "Adult Taekwondo",
-    ages: "Ages 18+",
-    desc: "Whether you're a complete beginner or returning to the mat, our adult program builds real skill and mental toughness.",
-    icon: "⚫",
+    name: "Teen Taekwondo",
+    ages: "Ages 13–17",
+    desc: "A faster-paced class for teens, with deeper technique work and leadership opportunities alongside a peer group their own age.",
+    icon: "⚡",
   },
   {
-    name: "Family Classes",
-    ages: "All Ages",
-    desc: "Train alongside your kids and strengthen your bond on and off the mat. One of our most popular offerings.",
-    icon: "👨‍👩‍👧",
+    name: "Adult Beginners",
+    ages: "Ages 18+",
+    desc: "A welcoming introduction to Taekwondo for grown-ups starting from scratch. No experience needed — just show up.",
+    icon: "🟢",
+  },
+  {
+    name: "Advanced Adult",
+    ages: "Ages 18+",
+    desc: "Deeper technique, sparring, and conditioning at a faster pace for adults who've built a foundation and are ready to push further.",
+    icon: "🥇",
   },
 ];
 
 const stats = [
-  { value: "4", label: "Programs Offered" },
+  { value: "5", label: "Programs Offered" },
   { value: "All Ages", label: "Welcome Here" },
   { value: "Sturgeon Bay", label: "Wisconsin" },
 ];
 
-const facilityFeatures = [
-  "Professional tatami mats",
-  "Full-wall mirrors",
-  "Heavy bag training area",
-  "Dedicated kids training zone",
-  "Adult training area",
-  "Spectator seating",
-  "Climate controlled",
-];
-
 const schedule = [
   { day: "Monday", classes: ["Little Dragons — 4:00 PM", "Youth Taekwondo — 5:00 PM"] },
+  { day: "Tuesday", classes: ["Teen Taekwondo — 5:00 PM", "Advanced Adult — 7:15 PM"] },
   { day: "Wednesday", classes: ["Little Dragons — 4:00 PM", "Youth Taekwondo — 5:00 PM"] },
-  { day: "Thursday", classes: ["Family Class — 6:00 PM"] },
+  { day: "Thursday", classes: ["Teen Taekwondo — 5:00 PM", "Adult Beginners — 6:00 PM", "Advanced Adult — 7:15 PM"] },
   { day: "Friday", classes: ["Youth Taekwondo — 5:00 PM"] },
-  { day: "Saturday", classes: ["Family Class — 10:30 AM"] },
+  { day: "Saturday", classes: ["Adult Beginners — 10:30 AM"] },
 ];
 
 export default function HomePage() {
@@ -249,42 +246,6 @@ export default function HomePage() {
             >
               FULL SCHEDULE
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FACILITY ── */}
-      <section className="py-20 bg-dojo-gray">
-        <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-14 items-center">
-          <div>
-            <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">THE SPACE</p>
-            <h2 className="font-heading text-5xl sm:text-6xl text-dojo-cream leading-tight mb-6">
-              BUILT FOR<br />SERIOUS TRAINING
-            </h2>
-            <p className="text-dojo-cream/70 leading-relaxed mb-8">
-              Our facility is purpose-built for martial arts. Every detail — from the
-              professional mats to the dedicated kids&apos; zone — is designed to support your training.
-            </p>
-            <ul className="grid grid-cols-2 gap-3">
-              {facilityFeatures.map((f) => (
-                <li key={f} className="flex items-center gap-2 text-dojo-cream/70 text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-dojo-red flex-shrink-0" />
-                  {f}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="grid grid-cols-2 gap-3">
-            {[
-              { stat: "4+", label: "Programs" },
-              { stat: "All Ages", label: "Welcome" },
-              { stat: "Door County", label: "Wisconsin" },
-            ].map((item) => (
-              <div key={item.label} className="bg-dojo-black rounded-xl p-6 border border-white/5 text-center">
-                <p className="font-heading text-4xl text-dojo-red">{item.stat}</p>
-                <p className="text-dojo-cream/60 text-sm font-semibold tracking-widest uppercase mt-1">{item.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

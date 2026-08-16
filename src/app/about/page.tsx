@@ -6,12 +6,37 @@ export const metadata: Metadata = {
   description: "Learn about Open Door Martial Arts Center — our history, our instructor Anne Barlas, and the legacy of Marjory Allingham in Sturgeon Bay, Wisconsin.",
 };
 
-const facilityFeatures = [
-  { icon: "🟫", label: "Professional Tatami Mats", desc: "Full competition-grade mat surface throughout the main training floor." },
-  { icon: "🪞", label: "Full-Wall Mirrors", desc: "Monitor your form and technique in real time from every angle." },
-  { icon: "🥊", label: "Heavy Bag Area", desc: "A dedicated heavy bag section for striking drills and conditioning work." },
-  { icon: "👶", label: "Kids Training Zone", desc: "A separate, safe training area designed specifically for our younger students." },
-  { icon: "👀", label: "Spectator Seating", desc: "Parents can watch every class comfortably from our spectator area." },
+const tenets = [
+  {
+    number: "01",
+    english: "Courtesy",
+    korean: "Ye Ui (예의)",
+    desc: "Showing politeness, good manners, and respect toward instructors, training partners, and everyone around you — on the mat and off it.",
+  },
+  {
+    number: "02",
+    english: "Integrity",
+    korean: "Yom Chi (염치)",
+    desc: "Knowing the difference between right and wrong, and having the honesty to act on it even when no one is watching.",
+  },
+  {
+    number: "03",
+    english: "Perseverance",
+    korean: "In Nae (인내)",
+    desc: "The patience and determination to keep working toward a goal, one step at a time, even when progress is slow or difficult.",
+  },
+  {
+    number: "04",
+    english: "Self-Control",
+    korean: "Guk Gi (극기)",
+    desc: "Ruling over your own thoughts, emotions, and actions — especially the discipline to use martial arts skill responsibly.",
+  },
+  {
+    number: "05",
+    english: "Indomitable Spirit",
+    korean: "Baekjeol Boolgool (백절불굴)",
+    desc: "An unbreakable will — the courage to stand up for what's right and keep going, no matter the odds stacked against you.",
+  },
 ];
 
 export default function AboutPage() {
@@ -152,22 +177,23 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Facility */}
+      {/* Five Tenets */}
       <section className="py-20 bg-dojo-gray">
-        <div className="mx-auto max-w-5xl px-6">
+        <div className="mx-auto max-w-6xl px-6">
           <div className="text-center mb-12">
-            <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">THE FACILITY</p>
-            <h2 className="font-heading text-5xl text-dojo-cream mb-4">525 JEFFERSON STREET</h2>
+            <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">OUR CODE</p>
+            <h2 className="font-heading text-5xl text-dojo-cream mb-4">THE FIVE TENETS OF TAEKWONDO</h2>
             <p className="text-dojo-cream/60 max-w-lg mx-auto">
-              Our school is right here in Sturgeon Bay — a proper martial arts facility built for serious training.
+              Every student, from Little Dragons to Advanced Adult, trains by the same five principles.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {facilityFeatures.map((f) => (
-              <div key={f.label} className="bg-dojo-black rounded-xl p-6 border border-white/5">
-                <span className="text-3xl">{f.icon}</span>
-                <h3 className="font-heading text-xl tracking-wide text-dojo-cream mt-4 mb-2">{f.label}</h3>
-                <p className="text-dojo-cream/50 text-sm leading-relaxed">{f.desc}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            {tenets.map((t) => (
+              <div key={t.english} className="bg-dojo-black rounded-xl p-6 border border-white/5">
+                <span className="font-heading text-3xl text-dojo-red">{t.number}</span>
+                <h3 className="font-heading text-2xl tracking-wide text-dojo-cream mt-3 mb-1">{t.english}</h3>
+                <p className="text-dojo-cream/40 text-xs font-semibold tracking-widest uppercase mb-3">{t.korean}</p>
+                <p className="text-dojo-cream/60 text-sm leading-relaxed">{t.desc}</p>
               </div>
             ))}
           </div>

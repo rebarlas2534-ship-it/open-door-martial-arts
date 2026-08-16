@@ -10,37 +10,42 @@ const schedule = [
   {
     day: "Monday",
     classes: [
-      { time: "4:00 PM", name: "Little Dragons", ages: "Ages 4–7", duration: "45 min" },
-      { time: "5:00 PM", name: "Youth Taekwondo", ages: "Ages 8–17", duration: "60 min" },
+      { time: "4:00 PM", name: "Little Dragons", ages: "Ages 4–7", duration: "30 min" },
+      { time: "5:00 PM", name: "Youth Taekwondo", ages: "Ages 8–12", duration: "60 min" },
     ],
   },
   {
     day: "Tuesday",
-    classes: [],
+    classes: [
+      { time: "5:00 PM", name: "Teen Taekwondo", ages: "Ages 13–17", duration: "60 min" },
+      { time: "7:15 PM", name: "Advanced Adult", ages: "Ages 18+", duration: "60 min" },
+    ],
   },
   {
     day: "Wednesday",
     classes: [
-      { time: "4:00 PM", name: "Little Dragons", ages: "Ages 4–7", duration: "45 min" },
-      { time: "5:00 PM", name: "Youth Taekwondo", ages: "Ages 8–17", duration: "60 min" },
+      { time: "4:00 PM", name: "Little Dragons", ages: "Ages 4–7", duration: "30 min" },
+      { time: "5:00 PM", name: "Youth Taekwondo", ages: "Ages 8–12", duration: "60 min" },
     ],
   },
   {
     day: "Thursday",
     classes: [
-      { time: "6:00 PM", name: "Family Class", ages: "All Ages", duration: "60 min" },
+      { time: "5:00 PM", name: "Teen Taekwondo", ages: "Ages 13–17", duration: "60 min" },
+      { time: "6:00 PM", name: "Adult Beginners", ages: "Ages 18+", duration: "60 min" },
+      { time: "7:15 PM", name: "Advanced Adult", ages: "Ages 18+", duration: "60 min" },
     ],
   },
   {
     day: "Friday",
     classes: [
-      { time: "5:00 PM", name: "Youth Taekwondo", ages: "Ages 8–17", duration: "60 min" },
+      { time: "5:00 PM", name: "Youth Taekwondo", ages: "Ages 8–12", duration: "60 min" },
     ],
   },
   {
     day: "Saturday",
     classes: [
-      { time: "10:30 AM", name: "Family Class", ages: "All Ages", duration: "60 min" },
+      { time: "10:30 AM", name: "Adult Beginners", ages: "Ages 18+", duration: "60 min" },
     ],
   },
   {
@@ -52,7 +57,9 @@ const schedule = [
 const programColors: Record<string, string> = {
   "Little Dragons": "bg-yellow-500/10 border-yellow-500/30 text-yellow-400",
   "Youth Taekwondo": "bg-blue-500/10 border-blue-500/30 text-blue-400",
-  "Family Class": "bg-green-500/10 border-green-500/30 text-green-400",
+  "Teen Taekwondo": "bg-purple-500/10 border-purple-500/30 text-purple-400",
+  "Adult Beginners": "bg-green-500/10 border-green-500/30 text-green-400",
+  "Advanced Adult": "bg-orange-500/10 border-orange-500/30 text-orange-400",
 };
 
 export default function SchedulePage() {
