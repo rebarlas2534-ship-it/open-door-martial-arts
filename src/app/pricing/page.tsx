@@ -95,11 +95,7 @@ export default function PricingPage() {
 
                 <Link
                   href="/contact"
-                  className={`mt-auto py-3 rounded font-heading text-xl tracking-widest text-center transition-colors ${
-                    plan.highlight
-                      ? "bg-dojo-red text-white hover:bg-dojo-red-dark"
-                      : "border border-white/20 text-dojo-ink hover:border-white/40 hover:text-dojo-ink"
-                  }`}
+                  className="mt-auto py-3 rounded font-heading text-xl tracking-widest text-center transition-colors bg-dojo-red text-white hover:bg-dojo-red-dark"
                 >
                   GET STARTED
                 </Link>
