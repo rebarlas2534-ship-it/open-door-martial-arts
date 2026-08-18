@@ -20,7 +20,7 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-50 bg-dojo-black/95 backdrop-blur border-b border-white/10">
-      <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-16">
+      <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-20">
         {/* Logo */}
         <Link
           href="/"
@@ -30,8 +30,8 @@ export default function Nav() {
           <Image
             src="/images/logo.png"
             alt="Open Door Martial Arts"
-            width={42}
-            height={42}
+            width={60}
+            height={60}
             priority
             unoptimized
           />
