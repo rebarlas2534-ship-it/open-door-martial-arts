@@ -65,12 +65,12 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mt-16 mb-8">
             <Image
               src="/images/logo.png"
               alt="Open Door Martial Arts"
-              width={220}
-              height={220}
+              width={280}
+              height={280}
               priority
               unoptimized
               className="drop-shadow-[0_0_50px_rgba(249,115,22,0.6)]"
