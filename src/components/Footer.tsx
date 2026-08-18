@@ -22,10 +22,6 @@ export default function Footer() {
                 <span className="text-dojo-red">MARTIAL ARTS</span>
               </span>
             </Link>
-            <p className="text-dojo-ink/60 text-sm leading-relaxed max-w-xs">
-              Taekwondo training for all ages in Sturgeon Bay, Wisconsin.
-              Carrying on a tradition built on heart, discipline, and community.
-            </p>
           </div>
 
           {/* Quick Links */}

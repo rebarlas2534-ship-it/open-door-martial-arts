@@ -88,8 +88,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-dojo-ink/70 text-lg sm:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
-            Professional Taekwondo training for kids, teens, and adults.
-            Located in Sturgeon Bay, Wisconsin. Your journey starts here.
+            Professional martial arts training
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -129,9 +128,14 @@ export default function HomePage() {
             </h2>
             <div className="space-y-4 text-dojo-ink/70 leading-relaxed">
               <p>
-                Open Door Martial Arts Center is a dedicated Taekwondo school in Sturgeon Bay, Wisconsin,
+                Open Door Martial Arts Center is a martial arts gym in Sturgeon Bay, Wisconsin,
                 carrying on a tradition of martial arts excellence in Door County that goes back decades.
               </p>
+            </div>
+            <h3 className="font-heading text-dojo-red text-2xl tracking-widest uppercase mt-6 mb-2">
+              Tae Kwon Do
+            </h3>
+            <div className="space-y-4 text-dojo-ink/70 leading-relaxed">
               <p>
                 We believe martial arts is for everyone. Whether you&apos;re bringing in your four-year-old
                 for their first class or stepping on the mat as an adult for the first time, our instructors
@@ -202,7 +206,7 @@ export default function HomePage() {
                 <h3 className="font-heading text-2xl tracking-wide text-dojo-ink mt-4 mb-1 group-hover:text-dojo-red transition-colors">
                   {p.name}
                 </h3>
-                <p className="text-dojo-red text-sm font-semibold tracking-widest uppercase mb-3">{p.ages}</p>
+                <p className="text-dojo-red text-sm font-semibold tracking-widest uppercase mb-3">Tae Kwon Do · {p.ages}</p>
                 <p className="text-dojo-ink/60 text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
