@@ -5,8 +5,8 @@
   --color-dojo-black:    #140f1c; /* primary dark background (deep purple-black) */
   --color-dojo-gray:     #221a30; /* secondary dark background, alternating sections */
   --color-dojo-gray-2:   #2f2640; /* deeper accent variant */
-  --color-dojo-red:      #5B2A86; /* purple accent */
-  --color-dojo-red-dark: #3F1D63; /* darker purple, for hover states */
+  --color-dojo-red:      #A855F7; /* bright purple accent, for readability on near-black */
+  --color-dojo-red-dark: #9333EA; /* slightly deeper purple, for hover states */
   --color-dojo-cream:    #f0e8e0; /* light hover tone for buttons on accent sections */
   --color-dojo-cream-2:  #e0d4c8; /* deeper cream variant */
   --color-dojo-ink:      #ffffff; /* pure white text on dark backgrounds, for maximum readability */

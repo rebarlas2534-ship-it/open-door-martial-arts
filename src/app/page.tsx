@@ -73,7 +73,7 @@ export default function HomePage() {
               height={220}
               priority
               unoptimized
-              className="drop-shadow-[0_0_50px_rgba(91,42,134,0.6)]"
+              className="drop-shadow-[0_0_50px_rgba(168,85,247,0.6)]"
             />
           </div>
 
