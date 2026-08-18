@@ -12,7 +12,7 @@ const programs = [
     ages: "Ages 4–7",
     icon: "🐉",
     color: "border-yellow-500/30",
-    accent: "text-amber-700",
+    accent: "text-yellow-400",
     desc: "Our Little Dragons program is specifically designed for young children who are just starting their martial arts journey. Through age-appropriate games, activities, and drills, kids develop fundamental motor skills, listening ability, and self-confidence.",
     highlights: [
       "Develops focus and listening skills",
@@ -29,7 +29,7 @@ const programs = [
     ages: "Ages 8+",
     icon: "🥋",
     color: "border-blue-500/30",
-    accent: "text-blue-700",
+    accent: "text-blue-400",
     desc: "One class that brings together every student age 8 and up, from complete beginners to advanced belts. Everyone trains from the same weekly rhythm, working at the level that's right for them.",
     highlights: [
       "Ages 8 through adult, together",

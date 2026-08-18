@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* Light redesign: SW Pineapple Cream (SW 1668) + SW Lite Lavender (SW 6554) */
-  --color-dojo-black:    #f2eac3; /* was near-black; now primary light background (Pineapple Cream) */
-  --color-dojo-gray:     #e0dadf; /* was dark gray; now secondary light background (Lite Lavender) */
-  --color-dojo-gray-2:   #cfc4d6; /* deeper lavender, for contrast when needed */
-  --color-dojo-red:      #5B2A86; /* was bright red; now dark purple accent */
+  /* Dark redesign: deep purple-black backgrounds, purple accent, warm off-white text */
+  --color-dojo-black:    #140f1c; /* primary dark background (deep purple-black) */
+  --color-dojo-gray:     #221a30; /* secondary dark background, alternating sections */
+  --color-dojo-gray-2:   #2f2640; /* deeper accent variant */
+  --color-dojo-red:      #5B2A86; /* purple accent */
   --color-dojo-red-dark: #3F1D63; /* darker purple, for hover states */
-  --color-dojo-cream:    #f2eac3; /* light hover tone for buttons on accent sections (Pineapple Cream) */
-  --color-dojo-cream-2:  #e8d9a0; /* deeper cream, for contrast when needed */
-  --color-dojo-ink:      #262019; /* dark warm ink for body/heading text on light backgrounds */
+  --color-dojo-cream:    #f0e8e0; /* light hover tone for buttons on accent sections */
+  --color-dojo-cream-2:  #e0d4c8; /* deeper cream variant */
+  --color-dojo-ink:      #f0e8e0; /* warm off-white text on dark backgrounds */
   --font-heading: var(--font-bebas);
   --font-sans:    var(--font-source-sans);
 }
 
 :root {
-  --background: #f2eac3;
-  --foreground: #262019;
+  --background: #140f1c;
+  --foreground: #f0e8e0;
 }
 
 body {

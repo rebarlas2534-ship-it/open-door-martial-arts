@@ -58,8 +58,8 @@ const holidayClosures = [
 ];
 
 const programColors: Record<string, string> = {
-  "Little Dragons": "bg-yellow-500/10 border-yellow-500/30 text-amber-700",
-  "All Levels": "bg-blue-500/10 border-blue-500/30 text-blue-700",
+  "Little Dragons": "bg-yellow-500/10 border-yellow-500/30 text-yellow-400",
+  "All Levels": "bg-blue-500/10 border-blue-500/30 text-blue-400",
 };
 
 export default function SchedulePage() {
