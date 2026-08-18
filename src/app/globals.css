@@ -9,14 +9,14 @@
   --color-dojo-red-dark: #3F1D63; /* darker purple, for hover states */
   --color-dojo-cream:    #f0e8e0; /* light hover tone for buttons on accent sections */
   --color-dojo-cream-2:  #e0d4c8; /* deeper cream variant */
-  --color-dojo-ink:      #f0e8e0; /* warm off-white text on dark backgrounds */
+  --color-dojo-ink:      #ffffff; /* pure white text on dark backgrounds, for maximum readability */
   --font-heading: var(--font-bebas);
   --font-sans:    var(--font-source-sans);
 }
 
 :root {
   --background: #140f1c;
-  --foreground: #f0e8e0;
+  --foreground: #ffffff;
 }
 
 body {

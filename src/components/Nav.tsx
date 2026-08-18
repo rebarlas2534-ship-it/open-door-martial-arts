@@ -50,7 +50,7 @@ export default function Nav() {
               className={`px-4 py-2 text-sm font-semibold tracking-widest uppercase transition-colors rounded ${
                 pathname === l.href
                   ? "text-dojo-red"
-                  : "text-dojo-ink/90 hover:text-dojo-ink hover:bg-white/5"
+                  : "text-dojo-ink hover:text-dojo-ink hover:bg-white/5"
               }`}
             >
               {l.label}

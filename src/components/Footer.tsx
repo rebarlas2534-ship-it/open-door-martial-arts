@@ -32,7 +32,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-dojo-ink/90 hover:text-dojo-ink text-sm font-semibold tracking-wide uppercase transition-colors"
+                    className="text-dojo-ink hover:text-dojo-ink text-sm font-semibold tracking-wide uppercase transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -43,7 +43,7 @@ export default function Footer() {
                   href="/OpenDoor_Waiver.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-dojo-ink/90 hover:text-dojo-ink text-sm font-semibold tracking-wide uppercase transition-colors"
+                  className="text-dojo-ink hover:text-dojo-ink text-sm font-semibold tracking-wide uppercase transition-colors"
                 >
                   Download Waiver
                 </a>
@@ -54,7 +54,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-heading text-xl tracking-widest text-dojo-red mb-4">CONTACT</h3>
-            <ul className="flex flex-col gap-2 text-sm text-dojo-ink/90">
+            <ul className="flex flex-col gap-2 text-sm text-dojo-ink">
               <li>525 Jefferson Street</li>
               <li>Sturgeon Bay, WI</li>
               <li>
@@ -79,7 +79,7 @@ export default function Footer() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc0rujRgEcYy7i0mgNZc8AriJVPddL8--nyC2PY3dqrCqoJag/viewform?usp=publish-editor"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-5 py-2 border border-white/20 text-dojo-ink/80 font-heading text-lg tracking-widest rounded hover:border-white/40 hover:text-dojo-ink transition-colors text-center"
+                className="inline-block px-5 py-2 border border-white/20 text-dojo-ink/95 font-heading text-lg tracking-widest rounded hover:border-white/40 hover:text-dojo-ink transition-colors text-center"
               >
                 HELP US GROW
               </a>
@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-6 text-center text-dojo-ink/70 text-xs">
+        <div className="border-t border-white/10 pt-6 text-center text-dojo-ink/90 text-xs">
           © {new Date().getFullYear()} Open Door Martial Arts Center. All rights reserved.
         </div>
       </div>

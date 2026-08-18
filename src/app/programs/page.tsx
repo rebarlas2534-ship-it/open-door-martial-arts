@@ -69,7 +69,7 @@ export default function ProgramsPage() {
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">WHAT WE OFFER</p>
           <h1 className="font-heading text-6xl sm:text-7xl text-dojo-ink mb-5">OUR PROGRAMS</h1>
-          <p className="text-dojo-ink/80 max-w-xl mx-auto leading-relaxed">
+          <p className="text-dojo-ink/95 max-w-xl mx-auto leading-relaxed">
             Programs for every age and skill level
           </p>
         </div>
@@ -95,16 +95,16 @@ export default function ProgramsPage() {
                       {p.ages}
                     </p>
                   </div>
-                  <p className="text-dojo-ink/70 text-xs text-center mt-2">{p.schedule}</p>
+                  <p className="text-dojo-ink/90 text-xs text-center mt-2">{p.schedule}</p>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1 p-8">
-                  <p className="text-dojo-ink/90 leading-relaxed mb-6">{p.desc}</p>
+                  <p className="text-dojo-ink leading-relaxed mb-6">{p.desc}</p>
                   <h3 className="font-heading text-xl tracking-widest text-dojo-ink mb-4">WHAT YOU GET</h3>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {p.highlights.map((h) => (
-                      <li key={h} className="flex items-start gap-2 text-dojo-ink/90 text-sm">
+                      <li key={h} className="flex items-start gap-2 text-dojo-ink text-sm">
                         <span className="mt-1 w-1.5 h-1.5 rounded-full bg-dojo-red flex-shrink-0" />
                         {h}
                       </li>
@@ -123,7 +123,7 @@ export default function ProgramsPage() {
           <div className="text-center mb-12">
             <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">EVERY WEEK</p>
             <h2 className="font-heading text-4xl sm:text-5xl text-dojo-ink mb-4">CLASS STRUCTURE</h2>
-            <p className="text-dojo-ink/80 max-w-lg mx-auto leading-relaxed">
+            <p className="text-dojo-ink/95 max-w-lg mx-auto leading-relaxed">
               Each week follows the same rhythm, so students always know what to expect.
             </p>
           </div>
@@ -132,7 +132,7 @@ export default function ProgramsPage() {
               <div key={c.day} className="bg-dojo-black rounded-xl p-7 border border-white/5">
                 <p className="font-heading text-dojo-red text-sm tracking-widest uppercase mb-1">{c.day}</p>
                 <h3 className="font-heading text-3xl tracking-wide text-dojo-ink mb-3">{c.label}</h3>
-                <p className="text-dojo-ink/80 text-sm leading-relaxed">{c.desc}</p>
+                <p className="text-dojo-ink/95 text-sm leading-relaxed">{c.desc}</p>
               </div>
             ))}
           </div>
@@ -143,11 +143,11 @@ export default function ProgramsPage() {
       <section className="py-16 border-t border-white/5">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-10">
-            <p className="font-heading text-dojo-ink/70 text-xl tracking-[0.2em] mb-3">WHAT&apos;S NEXT</p>
+            <p className="font-heading text-dojo-ink/90 text-xl tracking-[0.2em] mb-3">WHAT&apos;S NEXT</p>
             <h2 className="font-heading text-4xl sm:text-5xl text-dojo-ink mb-5">
               We&apos;re Growing: Help Shape What&apos;s Next
             </h2>
-            <p className="text-dojo-ink/80 leading-relaxed max-w-2xl">
+            <p className="text-dojo-ink/95 leading-relaxed max-w-2xl">
               Open Door is just getting started. We&apos;re starting with two core classes and plan to add
               more age-specific Taekwondo options as we grow, alongside new disciplines we&apos;re actively
               looking for qualified instructors to bring to Sturgeon Bay.
@@ -174,10 +174,10 @@ export default function ProgramsPage() {
                     <span className="text-3xl grayscale">{c.icon}</span>
                     <div>
                       <h3 className="font-heading text-xl text-dojo-ink tracking-wide">{c.name}</h3>
-                      <p className="text-dojo-ink/70 text-xs font-semibold tracking-widest uppercase">{c.note}</p>
+                      <p className="text-dojo-ink/90 text-xs font-semibold tracking-widest uppercase">{c.note}</p>
                     </div>
                   </div>
-                  <span className="flex-shrink-0 px-2 py-1 rounded border border-dojo-ink/20 text-dojo-ink/70 text-xs font-semibold tracking-widest uppercase">
+                  <span className="flex-shrink-0 px-2 py-1 rounded border border-dojo-ink/20 text-dojo-ink/90 text-xs font-semibold tracking-widest uppercase">
                     Coming Soon
                   </span>
                 </div>
@@ -185,7 +185,7 @@ export default function ProgramsPage() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc0rujRgEcYy7i0mgNZc8AriJVPddL8--nyC2PY3dqrCqoJag/viewform?usp=publish-editor"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto text-sm text-dojo-ink/70 hover:text-dojo-ink transition-colors font-semibold"
+                  className="mt-auto text-sm text-dojo-ink/90 hover:text-dojo-ink transition-colors font-semibold"
                 >
                   Interested? Let us know →
                 </a>
@@ -199,7 +199,7 @@ export default function ProgramsPage() {
       <section className="py-20 bg-dojo-red">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-heading text-5xl sm:text-6xl text-white mb-5">TRY A CLASS FREE</h2>
-          <p className="text-white/80 mb-8 leading-relaxed">
+          <p className="text-white/95 mb-8 leading-relaxed">
             Not sure which program is right for you? Come in, try a class, and we&apos;ll help you figure it out.
             No commitment required.
           </p>
