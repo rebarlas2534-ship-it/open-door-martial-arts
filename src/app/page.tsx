@@ -87,7 +87,7 @@ export default function HomePage() {
             <span className="text-dojo-red">BELONG HERE.</span>
           </h1>
 
-          <p className="text-dojo-ink/70 text-lg sm:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
+          <p className="text-dojo-ink/90 text-lg sm:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
             Professional martial arts training
           </p>
 
@@ -108,7 +108,7 @@ export default function HomePage() {
               href="https://docs.google.com/forms/d/e/1FAIpQLSc0rujRgEcYy7i0mgNZc8AriJVPddL8--nyC2PY3dqrCqoJag/viewform?usp=publish-editor"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 border border-dojo-ink/20 text-dojo-ink/60 font-heading text-2xl tracking-widest rounded hover:bg-white/5 hover:border-dojo-ink/40 hover:text-dojo-ink/80 transition-colors"
+              className="px-8 py-4 border border-dojo-ink/20 text-dojo-ink/80 font-heading text-2xl tracking-widest rounded hover:bg-white/5 hover:border-dojo-ink/40 hover:text-dojo-ink transition-colors"
             >
               HELP US GROW
             </a>
@@ -126,7 +126,7 @@ export default function HomePage() {
             <h2 className="font-heading text-5xl sm:text-6xl text-dojo-ink leading-tight mb-6">
               MORE THAN A GYM.<br />A COMMUNITY.
             </h2>
-            <div className="space-y-4 text-dojo-ink/70 leading-relaxed">
+            <div className="space-y-4 text-dojo-ink/90 leading-relaxed">
               <p>
                 Open Door Martial Arts Center is a martial arts gym in Sturgeon Bay, Wisconsin,
                 carrying on a tradition of martial arts excellence in Door County that goes back decades.
@@ -135,7 +135,7 @@ export default function HomePage() {
             <h3 className="font-heading text-dojo-red text-2xl tracking-widest uppercase mt-6 mb-2">
               Tae Kwon Do
             </h3>
-            <div className="space-y-4 text-dojo-ink/70 leading-relaxed">
+            <div className="space-y-4 text-dojo-ink/90 leading-relaxed">
               <p>
                 We believe martial arts is for everyone. Whether you&apos;re bringing in your four-year-old
                 for their first class or stepping on the mat as an adult for the first time, our instructors
@@ -159,7 +159,7 @@ export default function HomePage() {
               <div key={item.title} className="bg-dojo-gray rounded-xl p-5 border border-white/5">
                 <span className="text-3xl">{item.icon}</span>
                 <h3 className="font-heading text-xl tracking-wide text-dojo-ink mt-3 mb-1">{item.title}</h3>
-                <p className="text-dojo-ink/50 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-dojo-ink/70 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -172,7 +172,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">OUR CODE</p>
             <h2 className="font-heading text-5xl sm:text-6xl text-dojo-ink mb-4">THE FIVE TENETS OF TAEKWONDO</h2>
-            <p className="text-dojo-ink/60 max-w-lg mx-auto leading-relaxed">
+            <p className="text-dojo-ink/80 max-w-lg mx-auto leading-relaxed">
               Every student trains by the same five principles, from their first class onward.
             </p>
           </div>
@@ -181,8 +181,8 @@ export default function HomePage() {
               <div key={t.english} className="bg-dojo-black rounded-xl p-6 border border-white/5">
                 <span className="font-heading text-3xl text-dojo-red">{t.number}</span>
                 <h3 className="font-heading text-2xl tracking-wide text-dojo-ink mt-3 mb-1">{t.english}</h3>
-                <p className="text-dojo-ink/40 text-xs font-semibold tracking-widest uppercase mb-3">{t.korean}</p>
-                <p className="text-dojo-ink/60 text-sm leading-relaxed">{t.desc}</p>
+                <p className="text-dojo-ink/70 text-xs font-semibold tracking-widest uppercase mb-3">{t.korean}</p>
+                <p className="text-dojo-ink/80 text-sm leading-relaxed">{t.desc}</p>
               </div>
             ))}
           </div>
@@ -207,7 +207,7 @@ export default function HomePage() {
                   {p.name}
                 </h3>
                 <p className="text-dojo-red text-sm font-semibold tracking-widest uppercase mb-3">Tae Kwon Do · {p.ages}</p>
-                <p className="text-dojo-ink/60 text-sm leading-relaxed">{p.desc}</p>
+                <p className="text-dojo-ink/80 text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
             {/* CTA card */}
@@ -229,7 +229,7 @@ export default function HomePage() {
           <div className="text-center mt-8">
             <Link
               href="/programs"
-              className="inline-block px-6 py-3 border border-white/20 text-dojo-ink/70 font-heading text-xl tracking-widest rounded hover:border-dojo-ink/50 hover:text-dojo-ink transition-colors"
+              className="inline-block px-6 py-3 border border-white/20 text-dojo-ink/90 font-heading text-xl tracking-widest rounded hover:border-dojo-ink/50 hover:text-dojo-ink transition-colors"
             >
               SEE ALL PROGRAMS
             </Link>
@@ -250,7 +250,7 @@ export default function HomePage() {
                 <h3 className="font-heading text-2xl tracking-widest text-dojo-red mb-4">{day.day.toUpperCase()}</h3>
                 <ul className="flex flex-col gap-2">
                   {day.classes.map((cls) => (
-                    <li key={cls} className="text-dojo-ink/80 text-sm border-l-2 border-dojo-red/40 pl-3">
+                    <li key={cls} className="text-dojo-ink text-sm border-l-2 border-dojo-red/40 pl-3">
                       {cls}
                     </li>
                   ))}
@@ -261,7 +261,7 @@ export default function HomePage() {
           <div className="text-center mt-8">
             <Link
               href="/schedule"
-              className="inline-block px-6 py-3 border border-white/20 text-dojo-ink/70 font-heading text-xl tracking-widest rounded hover:border-dojo-ink/50 hover:text-dojo-ink transition-colors"
+              className="inline-block px-6 py-3 border border-white/20 text-dojo-ink/90 font-heading text-xl tracking-widest rounded hover:border-dojo-ink/50 hover:text-dojo-ink transition-colors"
             >
               FULL SCHEDULE
             </Link>

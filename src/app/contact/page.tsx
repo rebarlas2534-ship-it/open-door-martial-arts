@@ -34,7 +34,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">GET STARTED</p>
           <h1 className="font-heading text-6xl sm:text-7xl text-dojo-ink mb-5">FREE CLASS</h1>
-          <p className="text-dojo-ink/60 max-w-xl mx-auto leading-relaxed">
+          <p className="text-dojo-ink/80 max-w-xl mx-auto leading-relaxed">
             Fill out the form below and we&apos;ll reach out to get you scheduled for your first free class.
             No commitment, no pressure.
           </p>
@@ -47,7 +47,7 @@ export default function ContactPage() {
           <div className="bg-dojo-gray rounded-2xl border border-white/5 p-8 flex flex-col sm:flex-row sm:items-center gap-6">
             <div className="flex-1">
               <h2 className="font-heading text-2xl tracking-wide text-dojo-ink mb-3">Before Your First Class</h2>
-              <p className="text-dojo-ink/60 text-sm leading-relaxed">
+              <p className="text-dojo-ink/80 text-sm leading-relaxed">
                 We ask all new participants to complete a waiver before stepping on the mat. You can
                 download it below, fill it out at home, and bring it with you, or we&apos;ll have a
                 copy waiting for you when you arrive.
@@ -79,7 +79,7 @@ export default function ContactPage() {
               <div className="bg-green-900/30 border border-green-500/30 rounded-xl p-8 text-center">
                 <p className="text-4xl mb-4">✅</p>
                 <h3 className="font-heading text-2xl text-dojo-ink mb-2">WE GOT YOUR MESSAGE!</h3>
-                <p className="text-dojo-ink/70 text-sm leading-relaxed">
+                <p className="text-dojo-ink/90 text-sm leading-relaxed">
                   Thanks for reaching out! We&apos;ll contact you within 24 hours to get your free class scheduled.
                 </p>
               </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/60 mb-2">
+                    <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/80 mb-2">
                       First Name *
                     </label>
                     <input
@@ -99,7 +99,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/60 mb-2">
+                    <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/80 mb-2">
                       Last Name *
                     </label>
                     <input
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/60 mb-2">
+                  <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/80 mb-2">
                     Email *
                   </label>
                   <input
@@ -126,7 +126,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/60 mb-2">
+                  <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/80 mb-2">
                     Phone
                   </label>
                   <input
@@ -138,7 +138,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/60 mb-2">
+                  <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/80 mb-2">
                     Program of Interest
                   </label>
                   <select
@@ -153,7 +153,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/60 mb-2">
+                  <label className="block text-xs font-semibold tracking-widest uppercase text-dojo-ink/80 mb-2">
                     Message
                   </label>
                   <textarea
@@ -212,11 +212,11 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-heading text-xl tracking-wide text-dojo-ink mb-1">{item.title}</h3>
                   {item.href ? (
-                    <a href={item.href} className="text-dojo-ink/70 hover:text-dojo-ink transition-colors text-sm">
+                    <a href={item.href} className="text-dojo-ink/90 hover:text-dojo-ink transition-colors text-sm">
                       {item.content}
                     </a>
                   ) : (
-                    <p className="text-dojo-ink/70 text-sm">{item.content}</p>
+                    <p className="text-dojo-ink/90 text-sm">{item.content}</p>
                   )}
                 </div>
               </div>
@@ -235,8 +235,8 @@ export default function ContactPage() {
                   { day: "Saturday", time: "10:30 AM – 11:30 AM" },
                 ].map((row) => (
                   <li key={row.day} className="flex justify-between">
-                    <span className="text-dojo-ink/60 font-semibold">{row.day}</span>
-                    <span className={row.time === "Closed" ? "text-dojo-ink/30" : "text-dojo-ink/80"}>
+                    <span className="text-dojo-ink/80 font-semibold">{row.day}</span>
+                    <span className={row.time === "Closed" ? "text-dojo-ink/60" : "text-dojo-ink"}>
                       {row.time}
                     </span>
                   </li>
