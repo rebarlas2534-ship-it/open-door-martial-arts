@@ -34,7 +34,11 @@ const plans = [
 
 const additionalFees = [
   { label: "Annual enrollment fee", amount: "$35", note: "Once per year" },
-  { label: "Uniform (dobok)", amount: "$45", note: "At enrollment" },
+  {
+    label: "Uniform",
+    amount: "TBD",
+    note: "Includes dobok, Open Door t-shirt, and belt. Pricing subject to change.",
+  },
   { label: "Belt testing", amount: "$25", note: "Per test" },
 ];
 
@@ -45,9 +49,9 @@ export default function PricingPage() {
       <section className="py-20 bg-dojo-gray border-b border-white/5">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">TUITION</p>
-          <h1 className="font-heading text-6xl sm:text-7xl text-dojo-cream mb-5">PRICING</h1>
-          <p className="text-dojo-cream/60 max-w-md mx-auto leading-relaxed">
-            Two straightforward options. No hidden fees, no contracts, no pressure.
+          <h1 className="font-heading text-6xl sm:text-7xl text-dojo-ink mb-5">PRICING</h1>
+          <p className="text-dojo-ink/60 max-w-md mx-auto leading-relaxed">
+            Simple, straightforward options. No hidden fees, no contracts, no pressure.
           </p>
         </div>
       </section>
@@ -67,7 +71,7 @@ export default function PricingPage() {
               >
                 <div>
                   <div className="flex items-start justify-between gap-2 mb-1">
-                    <h2 className="font-heading text-2xl tracking-wide text-dojo-cream">{plan.name}</h2>
+                    <h2 className="font-heading text-2xl tracking-wide text-dojo-ink">{plan.name}</h2>
                     {plan.highlight && plan.note && (
                       <span className="text-xs text-dojo-red font-semibold tracking-widest uppercase border border-dojo-red/30 px-2 py-1 rounded flex-shrink-0">
                         {plan.note}
@@ -75,14 +79,14 @@ export default function PricingPage() {
                     )}
                   </div>
                   <div className="flex items-baseline gap-1 mt-4">
-                    <span className="font-heading text-5xl text-dojo-cream">{plan.price}</span>
-                    <span className="text-dojo-cream/40 text-sm">{plan.period}</span>
+                    <span className="font-heading text-5xl text-dojo-ink">{plan.price}</span>
+                    <span className="text-dojo-ink/40 text-sm">{plan.period}</span>
                   </div>
                 </div>
 
                 <ul className="flex flex-col gap-3 flex-1">
                   {plan.includes.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-dojo-cream/70 text-sm leading-relaxed">
+                    <li key={item} className="flex items-start gap-3 text-dojo-ink/70 text-sm leading-relaxed">
                       <span className="mt-1 w-1.5 h-1.5 rounded-full bg-dojo-red flex-shrink-0" />
                       {item}
                     </li>
@@ -94,7 +98,7 @@ export default function PricingPage() {
                   className={`mt-auto py-3 rounded font-heading text-xl tracking-widest text-center transition-colors ${
                     plan.highlight
                       ? "bg-dojo-red text-white hover:bg-dojo-red-dark"
-                      : "border border-white/20 text-dojo-cream/70 hover:border-white/40 hover:text-dojo-cream"
+                      : "border border-white/20 text-dojo-ink/70 hover:border-white/40 hover:text-dojo-ink"
                   }`}
                 >
                   GET STARTED
@@ -105,19 +109,37 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* Pay By The Class */}
+      <section className="pb-16">
+        <div className="mx-auto max-w-3xl px-6">
+          <div className="rounded-2xl border border-white/5 bg-dojo-gray p-8 flex flex-col sm:flex-row sm:items-center gap-6 justify-between">
+            <div>
+              <h2 className="font-heading text-2xl tracking-wide text-dojo-ink mb-2">Pay By The Class</h2>
+              <p className="text-dojo-ink/70 text-sm leading-relaxed max-w-md">
+                Not ready for a monthly plan? Drop in and pay as you go, no commitment required.
+              </p>
+            </div>
+            <div className="flex items-baseline gap-1 sm:flex-shrink-0">
+              <span className="font-heading text-5xl text-dojo-ink">$15</span>
+              <span className="text-dojo-ink/40 text-sm">/ class</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Additional fees */}
       <section className="pb-10">
         <div className="mx-auto max-w-3xl px-6">
           <div className="bg-dojo-gray rounded-2xl border border-white/5 p-8">
-            <h2 className="font-heading text-2xl tracking-widest text-dojo-cream mb-6">ADDITIONAL FEES</h2>
+            <h2 className="font-heading text-2xl tracking-widest text-dojo-ink mb-6">ADDITIONAL FEES</h2>
             <ul className="flex flex-col divide-y divide-white/5">
               {additionalFees.map((fee) => (
                 <li key={fee.label} className="flex items-center justify-between py-4 gap-4">
                   <div>
-                    <p className="text-dojo-cream/80 text-sm font-semibold">{fee.label}</p>
-                    <p className="text-dojo-cream/40 text-xs mt-0.5">{fee.note}</p>
+                    <p className="text-dojo-ink/80 text-sm font-semibold">{fee.label}</p>
+                    <p className="text-dojo-ink/40 text-xs mt-0.5">{fee.note}</p>
                   </div>
-                  <span className="font-heading text-2xl text-dojo-cream flex-shrink-0">{fee.amount}</span>
+                  <span className="font-heading text-2xl text-dojo-ink flex-shrink-0">{fee.amount}</span>
                 </li>
               ))}
             </ul>
@@ -128,14 +150,14 @@ export default function PricingPage() {
       {/* Warm note + CTA */}
       <section className="py-16">
         <div className="mx-auto max-w-xl px-6 text-center">
-          <p className="text-dojo-cream/60 leading-relaxed mb-8 text-lg">
-            Not sure which option is right for you? Come in for a free trial class and we&apos;ll figure it out together.
+          <p className="text-dojo-ink/60 leading-relaxed mb-8 text-lg">
+            Not sure which option is right for you? Come in for a free class and we&apos;ll figure it out together.
           </p>
           <Link
             href="/contact"
             className="inline-block px-10 py-4 bg-dojo-red text-white font-heading text-2xl tracking-widest rounded hover:bg-dojo-red-dark transition-colors"
           >
-            CLAIM FREE TRIAL
+            CLAIM FREE CLASS
           </Link>
         </div>
       </section>

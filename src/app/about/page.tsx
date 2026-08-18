@@ -46,8 +46,8 @@ export default function AboutPage() {
       <section className="py-20 bg-dojo-gray border-b border-white/5">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">OUR STORY</p>
-          <h1 className="font-heading text-6xl sm:text-7xl text-dojo-cream mb-5">ABOUT OPEN DOOR</h1>
-          <p className="text-dojo-cream/60 max-w-xl mx-auto leading-relaxed">
+          <h1 className="font-heading text-6xl sm:text-7xl text-dojo-ink mb-5">ABOUT OPEN DOOR</h1>
+          <p className="text-dojo-ink/60 max-w-xl mx-auto leading-relaxed">
             A Taekwondo school rooted in Door County history, dedicated to a woman who believed in every single kid who walked through her door.
           </p>
         </div>
@@ -57,14 +57,14 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="mx-auto max-w-4xl px-6">
           <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-4">THE LEGACY</p>
-          <h2 className="font-heading text-5xl sm:text-6xl text-dojo-cream leading-tight mb-8">
+          <h2 className="font-heading text-5xl sm:text-6xl text-dojo-ink leading-tight mb-8">
             BUILT ON A FOUNDATION<br />OF BELIEF
           </h2>
 
-          <div className="space-y-5 text-dojo-cream/80 leading-relaxed text-lg">
+          <div className="space-y-5 text-dojo-ink/80 leading-relaxed text-lg">
             <p>
-              Open Door Martial Arts Center carries on the legacy of <strong className="text-dojo-cream">Open Door Tae Kwon Do</strong>,
-              founded by <strong className="text-dojo-cream">Marjory Allingham</strong>. For years, Marjory ran her school right here in
+              Open Door Martial Arts Center carries on the legacy of <strong className="text-dojo-ink">Open Door Tae Kwon Do</strong>,
+              founded by <strong className="text-dojo-ink">Marjory Allingham</strong>. For years, Marjory ran her school right here in
               Door County, teaching dozens of local students the discipline, focus, and confidence that only martial arts can build.
               She ran it until her death in 2013.
             </p>
@@ -82,15 +82,15 @@ export default function AboutPage() {
 
           {/* Pull quote */}
           <blockquote className="my-12 border-l-4 border-dojo-red pl-6">
-            <p className="font-heading text-3xl sm:text-4xl text-dojo-cream leading-snug">
+            <p className="font-heading text-3xl sm:text-4xl text-dojo-ink leading-snug">
               &ldquo;She never met a kid she didn&apos;t believe in.&rdquo;
             </p>
-            <footer className="mt-3 text-dojo-cream/50 text-sm font-semibold tracking-widest uppercase">
+            <footer className="mt-3 text-dojo-ink/50 text-sm font-semibold tracking-widest uppercase">
               The guiding spirit of Open Door
             </footer>
           </blockquote>
 
-          <div className="space-y-5 text-dojo-cream/80 leading-relaxed text-lg">
+          <div className="space-y-5 text-dojo-ink/80 leading-relaxed text-lg">
             <p>
               The new Open Door Martial Arts Center is dedicated to Marjory&apos;s memory. We&apos;re here
               because she was here first, and because the Door County community deserves a place where that
@@ -105,11 +105,11 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-14 items-center">
           <div>
             <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">LEAD INSTRUCTOR</p>
-            <h2 className="font-heading text-5xl text-dojo-cream leading-tight mb-2">Anne Barlas</h2>
+            <h2 className="font-heading text-5xl text-dojo-ink leading-tight mb-2">Anne Barlas</h2>
             <p className="text-dojo-red font-semibold tracking-widest uppercase text-sm mb-6">
               3rd Degree Black Belt · Lead Instructor & Manager
             </p>
-            <div className="space-y-4 text-dojo-cream/70 leading-relaxed">
+            <div className="space-y-4 text-dojo-ink/70 leading-relaxed">
               <p>
                 Anne Barlas was one of Mrs. A&apos;s own students. She began training under
                 Marjory Allingham at age 8, and when Mrs. A passed the school on to her, Anne
@@ -129,7 +129,7 @@ export default function AboutPage() {
           <div className="flex items-start justify-center">
             <div className="w-full max-w-sm aspect-[3/4] rounded-2xl border-2 border-dashed border-white/20 bg-dojo-black flex flex-col items-center justify-center gap-3 text-center p-6">
               <span className="text-4xl opacity-30">📷</span>
-              <p className="text-dojo-cream/30 text-sm font-medium">Photo of Anne Barlas</p>
+              <p className="text-dojo-ink/30 text-sm font-medium">Photo of Anne Barlas</p>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center mb-12">
             <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">WHAT WE STAND FOR</p>
-            <h2 className="font-heading text-5xl text-dojo-cream">HOW WE SHOW UP</h2>
+            <h2 className="font-heading text-5xl text-dojo-ink">HOW WE SHOW UP</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
@@ -168,8 +168,8 @@ export default function AboutPage() {
               <div key={v.title} className="bg-dojo-gray rounded-xl p-7 border border-white/5 flex gap-5">
                 <span className="text-4xl flex-shrink-0">{v.icon}</span>
                 <div>
-                  <h3 className="font-heading text-2xl tracking-wide text-dojo-cream mb-2">{v.title}</h3>
-                  <p className="text-dojo-cream/60 text-sm leading-relaxed">{v.desc}</p>
+                  <h3 className="font-heading text-2xl tracking-wide text-dojo-ink mb-2">{v.title}</h3>
+                  <p className="text-dojo-ink/60 text-sm leading-relaxed">{v.desc}</p>
                 </div>
               </div>
             ))}
@@ -182,18 +182,18 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center mb-12">
             <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">OUR CODE</p>
-            <h2 className="font-heading text-5xl text-dojo-cream mb-4">THE FIVE TENETS OF TAEKWONDO</h2>
-            <p className="text-dojo-cream/60 max-w-lg mx-auto">
-              Every student, from Little Dragons to Advanced Adult, trains by the same five principles.
+            <h2 className="font-heading text-5xl text-dojo-ink mb-4">THE FIVE TENETS OF TAEKWONDO</h2>
+            <p className="text-dojo-ink/60 max-w-lg mx-auto">
+              Every student, from Little Dragons to our most advanced belts, trains by the same five principles.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
             {tenets.map((t) => (
               <div key={t.english} className="bg-dojo-black rounded-xl p-6 border border-white/5">
                 <span className="font-heading text-3xl text-dojo-red">{t.number}</span>
-                <h3 className="font-heading text-2xl tracking-wide text-dojo-cream mt-3 mb-1">{t.english}</h3>
-                <p className="text-dojo-cream/40 text-xs font-semibold tracking-widest uppercase mb-3">{t.korean}</p>
-                <p className="text-dojo-cream/60 text-sm leading-relaxed">{t.desc}</p>
+                <h3 className="font-heading text-2xl tracking-wide text-dojo-ink mt-3 mb-1">{t.english}</h3>
+                <p className="text-dojo-ink/40 text-xs font-semibold tracking-widest uppercase mb-3">{t.korean}</p>
+                <p className="text-dojo-ink/60 text-sm leading-relaxed">{t.desc}</p>
               </div>
             ))}
           </div>
@@ -212,7 +212,7 @@ export default function AboutPage() {
             href="/contact"
             className="inline-block px-10 py-4 bg-white text-dojo-red font-heading text-2xl tracking-widest rounded hover:bg-dojo-cream transition-colors"
           >
-            CLAIM FREE TRIAL
+            CLAIM FREE CLASS
           </Link>
         </div>
       </section>

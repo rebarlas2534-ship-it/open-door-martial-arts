@@ -50,7 +50,7 @@ export default function Nav() {
               className={`px-4 py-2 text-sm font-semibold tracking-widest uppercase transition-colors rounded ${
                 pathname === l.href
                   ? "text-dojo-red"
-                  : "text-dojo-cream/70 hover:text-dojo-cream hover:bg-white/5"
+                  : "text-dojo-ink/70 hover:text-dojo-ink hover:bg-white/5"
               }`}
             >
               {l.label}
@@ -60,13 +60,13 @@ export default function Nav() {
             href="/contact"
             className="ml-3 px-5 py-2 bg-dojo-red text-white font-heading text-lg tracking-widest rounded hover:bg-dojo-red-dark transition-colors"
           >
-            FREE TRIAL
+            FREE CLASS
           </Link>
         </nav>
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 rounded text-dojo-cream hover:bg-white/10"
+          className="md:hidden p-2 rounded text-dojo-ink hover:bg-white/10"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -91,7 +91,7 @@ export default function Nav() {
               href={l.href}
               onClick={() => setOpen(false)}
               className={`font-heading text-3xl tracking-widest py-1 transition-colors ${
-                pathname === l.href ? "text-dojo-red" : "text-dojo-cream hover:text-dojo-red"
+                pathname === l.href ? "text-dojo-red" : "text-dojo-ink hover:text-dojo-red"
               }`}
             >
               {l.label}
@@ -102,7 +102,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="mt-4 py-3 bg-dojo-red text-white font-heading text-3xl tracking-widest text-center rounded hover:bg-dojo-red-dark transition-colors"
           >
-            FREE TRIAL
+            FREE CLASS
           </Link>
         </div>
       )}

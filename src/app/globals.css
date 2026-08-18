@@ -1,20 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dojo-black:    #0a0a0a;
-  --color-dojo-gray:     #1a1a1a;
-  --color-dojo-gray-2:   #2a2a2a;
-  --color-dojo-red:      #CC1111;
-  --color-dojo-red-dark: #a50e0e;
-  --color-dojo-cream:    #f5f0e8;
-  --color-dojo-cream-2:  #e8e0d0;
+  /* Light redesign: SW Pineapple Cream (SW 1668) + SW Lite Lavender (SW 6554) */
+  --color-dojo-black:    #f2eac3; /* was near-black; now primary light background (Pineapple Cream) */
+  --color-dojo-gray:     #e0dadf; /* was dark gray; now secondary light background (Lite Lavender) */
+  --color-dojo-gray-2:   #cfc4d6; /* deeper lavender, for contrast when needed */
+  --color-dojo-red:      #5B2A86; /* was bright red; now dark purple accent */
+  --color-dojo-red-dark: #3F1D63; /* darker purple, for hover states */
+  --color-dojo-cream:    #f2eac3; /* light hover tone for buttons on accent sections (Pineapple Cream) */
+  --color-dojo-cream-2:  #e8d9a0; /* deeper cream, for contrast when needed */
+  --color-dojo-ink:      #262019; /* dark warm ink for body/heading text on light backgrounds */
   --font-heading: var(--font-bebas);
   --font-sans:    var(--font-source-sans);
 }
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #f5f0e8;
+  --background: #f2eac3;
+  --foreground: #262019;
 }
 
 body {

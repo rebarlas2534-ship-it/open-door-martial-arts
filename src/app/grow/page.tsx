@@ -15,10 +15,10 @@ export default function GrowPage() {
       <section className="py-20 bg-dojo-gray border-b border-white/5">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="font-heading text-dojo-red text-xl tracking-[0.2em] mb-3">GET INVOLVED</p>
-          <h1 className="font-heading text-6xl sm:text-7xl text-dojo-cream mb-5">
+          <h1 className="font-heading text-6xl sm:text-7xl text-dojo-ink mb-5">
             Help Us Build Open Door
           </h1>
-          <p className="text-dojo-cream/60 max-w-xl mx-auto leading-relaxed">
+          <p className="text-dojo-ink/60 max-w-xl mx-auto leading-relaxed">
             Open Door is more than a building: it&apos;s whatever Door County wants it to be.
             That means we need to hear from you.
           </p>
@@ -33,10 +33,10 @@ export default function GrowPage() {
           <div className="bg-dojo-gray rounded-2xl border border-white/5 p-10 flex flex-col gap-6">
             <span className="text-5xl">💬</span>
             <div>
-              <h2 className="font-heading text-4xl text-dojo-cream leading-tight mb-3">
+              <h2 className="font-heading text-4xl text-dojo-ink leading-tight mb-3">
                 Want a class we don&apos;t offer yet?
               </h2>
-              <div className="space-y-4 text-dojo-cream/70 leading-relaxed">
+              <div className="space-y-4 text-dojo-ink/70 leading-relaxed">
                 <p>
                   We&apos;re actively thinking about what to add next: Tai Chi, Brazilian Jiu-Jitsu,
                   adult Taekwondo, fitness kickboxing, but we want to know what Door County
@@ -62,10 +62,10 @@ export default function GrowPage() {
           <div className="bg-dojo-gray rounded-2xl border border-white/5 p-10 flex flex-col gap-6">
             <span className="text-5xl">🥋</span>
             <div>
-              <h2 className="font-heading text-4xl text-dojo-cream leading-tight mb-3">
+              <h2 className="font-heading text-4xl text-dojo-ink leading-tight mb-3">
                 Are you an instructor?
               </h2>
-              <div className="space-y-4 text-dojo-cream/70 leading-relaxed">
+              <div className="space-y-4 text-dojo-ink/70 leading-relaxed">
                 <p>
                   We have the space, the students, and the community. We just need the right people.
                   If you&apos;re a qualified martial arts instructor looking for a place to teach in
@@ -80,11 +80,11 @@ export default function GrowPage() {
             </div>
             <a
               href="mailto:info@opendoormac.com"
-              className="mt-auto inline-block px-8 py-4 border border-dojo-cream/30 text-dojo-cream font-heading text-2xl tracking-widest rounded hover:bg-white/5 hover:border-dojo-cream/60 transition-colors text-center"
+              className="mt-auto inline-block px-8 py-4 border border-dojo-ink/30 text-dojo-ink font-heading text-2xl tracking-widest rounded hover:bg-white/5 hover:border-dojo-ink/60 transition-colors text-center"
             >
               EMAIL US
             </a>
-            <p className="text-dojo-cream/40 text-sm -mt-3 text-center">
+            <p className="text-dojo-ink/40 text-sm -mt-3 text-center">
               info@opendoormac.com
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function GrowPage() {
       {/* Bottom note */}
       <section className="pb-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <p className="text-dojo-cream/40 leading-relaxed text-sm">
+          <p className="text-dojo-ink/40 leading-relaxed text-sm">
             Open Door Martial Arts Center is a small, community-owned school at 525 Jefferson Street
             in Sturgeon Bay. We&apos;re building this place thoughtfully: one class, one student,
             one conversation at a time.
